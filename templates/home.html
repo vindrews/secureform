@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Favorite Color</title>
   </head>
   <body>
 
     <form action={{ url_for("renderResult") }}>
-      <select name="coin">
-        <option value="heads">Heads</option>
-        <option value="tails">Tails</option>
-      </select>
+      What is your favorite color?<br>
+      <input type="text" name="color">
       <br><br>
       <input type="submit">
     </form>
