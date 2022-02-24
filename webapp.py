@@ -17,7 +17,7 @@ def render_response():
     else:
         reply = "My favorite color is pink."
     n = request.args['multNum']
-    reply2 = "2 x " + n + " = " + (2*n)
+    reply2 = "2 x " + str(n) + " = " + str((2*n))
     return render_template('response.html', response1 = reply1, response2 = reply2)
     
 if __name__=="__main__":
