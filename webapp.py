@@ -16,7 +16,7 @@ def render_response():
         reply1 = "That's my favorite color, too!"
     else:
         reply1 = "My favorite color is pink."
-    n = request.args['multNum']
+    n = int(request.args['multNum']) #values in request.args are strings by default
     reply2 = "2 x " + str(n) + " = " + str((2*n))
     return render_template('response.html', response1 = reply1, response2 = reply2)
     
