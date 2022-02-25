@@ -6,12 +6,14 @@
   <body>
 
     <form action='/response'>
-      What is your favorite color?<br>
-      <input type="text" name="color">
+      <label for="color">What is your favorite color?</label>
+      <br>
+      <input type="text" name="color" id="color">
       <br><br>
       
-      What number do you want to multiply by 2?<br>
-      <input type="number" name="multNum">
+      <label for="num">What number do you want to multiply by 2?</label>
+      <br>
+      <input type="number" name="multNum" id="num" required>
       <br><br>
       <input type="submit">
     </form>
