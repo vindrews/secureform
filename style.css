@@ -1,0 +1,13 @@
+#passworddiv{
+    border: 2px solid red;
+    text-align: center;
+    font-family: "Courier New";
+    padding: 10px;
+    width: 35%;
+    margin: auto;
+}
+   
+#button{
+    border: 2px solid green;
+    padding: 5px;
+}

@@ -8,14 +8,17 @@ def render_main():
 
 @app.route("/response")
 def render_response():
-    name = request.args['name'] 
-    #The request object stores information about the request sent to the server.
-    #args is an ImmutableMultiDict (like a dictionary but can have mutliple values for the same key and can't be changed)
-    #The information in args is visible in the url for the page being requested. ex. .../response?color=blue
-    if name == 'talkbot':
-        reply1 = "That's my name, too! What a nice coincidence :] How are you today, Talkbot?"
+    word = request.args['word'] 
+    number = request.args['number']
+   
+    if number > 100:
+        print("&", number, word.upper(1:3), "##!")
     else:
-        reply1 = "What a lovely name! How are you doing today, name?"
-    
-if __name__=="__main__":
+        print(number, "##", word.upper(1:2), "()!")
+        
+    if __name__=="__main__":
     app.run(debug=False)
+        
+render_response()
+        
+        
