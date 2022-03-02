@@ -8,17 +8,12 @@ def render_main():
 
 @app.route("/response")
 def render_response():
-    word = request.args['word'] 
-    number = request.args['number']
-   
-    if number > 100:
-        print("&", number, word.upper(1:3), "##!")
-    else:
-        print(number, "##", word.upper(1:2), "()!")
-        
-    if __name__=="__main__":
-    app.run(debug=False)
+    word = input('word') 
+    number = input('number')
+    return("*()*"+word[0:3]+number+word[3:5]+"!@!")
+ 
         
 render_response()
+render_main()
         
         
