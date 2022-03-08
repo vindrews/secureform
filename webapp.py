@@ -12,6 +12,7 @@ def render_response():
     a = random.randrange(1, 100)
     word = request.args['word']
     number = request.args['number']
+
     
     if a >= 1 and a < 10:
         response = "*()*"+word[0:3]+number+word[3:10]+"!@!"
