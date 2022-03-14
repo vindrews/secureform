@@ -32,7 +32,7 @@ def render_response():
         response = word[3:10]+"{}-{}"+number+"!%%!"+word[0:3]
     elif a >= 80 and a < 90:
         response = word[3:10]+"^%%^"+number+"+:##:+"+word[0:3]
-    elif a >-90 and word <= 100:
+    elif a >= 90 and word <= 100:
         reponse = word[0:3]+"("+number+")"+"| |"+word[3:10]
     return render_template('response.html', response = response)
 

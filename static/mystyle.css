@@ -28,6 +28,24 @@
     text-align: center;
 }
 
+#response{
+    background: yellow;
+}
+
+#bbbutton{    
+    padding: 10px;
+    width: 60%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#generateanother{
+    width: 15%;
+    margin: auto;
+}
+
 .btn{
     width: 90%;
     height: 90%;

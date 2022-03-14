@@ -2,7 +2,8 @@
 <html>
   <head>
     <title>Password Generated</title>
-    <link rel="stylesheet" href="/static/mystyle.css">    
+    <link rel="stylesheet" href="/static/mystyle.css"> 
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 
     <!--boostrap stuff-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -16,14 +17,14 @@
   
     <div id=generateddiv>
         <h1> Password:</h1>
-        <h3><ins>{{response}}</ins></h3>
+        <h3 id="response">{{response}}</h3> <br>
+        <p>Not happy with this password? Reload the page to get a new one with the same word and number!<p>
     </div>
     <br>
-    <div id=button>
     
-        <a href="home.html" class="btn btn-primary">Generate Another?</a>
-   
-   </div>
+    <div id= "bbbutton">
+        <a id="generateanother" href="/" class="btn btn-primary">Generate Another?</a>
+    </div>
     
   </body>
 </html>
