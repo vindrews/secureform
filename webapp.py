@@ -35,10 +35,10 @@ def render_response():
             response = word[3:10]+"^%%^"+number+"+:##:+"+word[0:3]
         elif a >= 90 and word <= 100:
             reponse = word[0:3]+"("+number+")"+"| |"+word[3:10]
-    return render_template('response.html', response = response)
+        return render_template('response.html', response = response)
     else:
         response = "Uh oh! Something went wrong, try again."
-    return render_template('response.html', response = response)
+        return render_template('response.html', response = response)
 
 if __name__=="__main__":
     app.run(debug=False)
