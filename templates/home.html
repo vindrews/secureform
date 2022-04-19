@@ -1,29 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="/static/mystyle.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
-     <!--boostrap stuff-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-  </head>
-  
-    <body>
-    
-        <div id=passworddiv>
-            <h3>Quick Password Generator</h3>
-              <form action="/response" method="post">
-                  <label for="word">Input a word that's important to you that you want incorporated into your password here (preferably around 5 letters):</label><br>
-                  <input type="text" id="word" name="word"><br>
-                  <label for="number"> Then, input a number that's important to you that you want incorporated into your password here:</label><br>
-                  <input type="number" id="number" name="number"><br><br>
-                  <input id="button" class = "btn btn primary" type="submit" value="Submit">
-              </form>
-        </div>
-
-    </body>
-</html>
+{%extends "template.html"%}
+ {%block content%}
+           <h3>How well do you know your Valve games? Let's find out, starting with something easy.</h3>
+            <p>What is the first game that Valve released?</p>
+                <form action="/page1">
+                  <input type="radio" id="gamehalflife1" name="1stgame" value="halflife1">
+                  <label for="gamehalflife1">Half Life 1</label>
+                  <input type="radio" id="gameportal" name="1stgame" value="portal">
+                  <label for="gameportal">Portal 1</label><br>
+                  <input type="radio" id="gamedeusex" name="1stgame" value="deusex">
+                  <label for="gamedeusex">Deus Ex</label>
+                  <input type="radio" id="gameteamfortress" name="1stgame" value="teamfortress">
+                  <label for="gameteamfortress">Team Fortress Classic</label><br><br>
+                  <input id="button" class = "btn btn primary" type="submit" value="Next">
+                
+                </form>
+  {%endblock%}

@@ -1,0 +1,15 @@
+{%extends "template.html"%}
+ {%block content%}
+            <p>What is the name of the player character in the Portal series?</p>
+                <form action="/response">
+                  <input type="radio" id="counttofour" name="countto" value="4">
+                  <label for="counttofour">4</label>
+                  <input type="radio" id="counttotwo" name="countto" value="2">
+                  <label for="counttotwo">2</label><br>
+                  <input type="radio" id="counttothree" name="countto" value="3">
+                  <label for="counttothree">3</label>
+                  <input type="radio" id="counttoten" name="countto" value="10">
+                  <label for="counttoten">10</label><br><br>
+                  <input id="button" class = "btn btn primary" type="submit" value="Submit">
+                </form>
+  {%endblock%}

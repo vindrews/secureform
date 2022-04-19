@@ -1,0 +1,15 @@
+{%extends "template.html"%}
+ {%block content%}
+            <p>How many playable characters are there in Team Fortress 2?</p>
+                <form action="/page2">
+                  <input type="radio" id="players12" name="players" value="12">
+                  <label for="players12">12</label>
+                  <input type="radio" id="players9" name="players" value="9">
+                  <label for="players9">9</label><br>
+                  <input type="radio" id="players1" name="players" value="1">
+                  <label for="players1">1</label>
+                  <input type="radio" id="players4" name="players" value="4">
+                  <label for="players4">4</label><br><br>
+                  <input id="button" class = "btn btn primary" type="submit" value="Next">
+                </form>
+  {%endblock%}

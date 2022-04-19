@@ -1,0 +1,15 @@
+{%extends "template.html"%}
+ {%block content%}
+            <p>What is the name of the player character in the Portal series?</p>
+                <form action="/page4">
+                  <input type="radio" id="playernamewheatley" name="playername" value="wheatley">
+                  <label for="playernamewheatley">Wheatley</label>
+                  <input type="radio" id="playernamechell" name="playername" value="chell">
+                  <label for="playernamechell">Chell</label><br>
+                  <input type="radio" id="playernamegordon" name="playername" value="gordon">
+                  <label for="playernamegordon">Gordon Freeman</label>
+                  <input type="radio" id="playernamebenrey" name="playername" value="benrey">
+                  <label for="playernamebenrey">Benrey</label><br><br>
+                  <input id="button" class = "btn btn primary" type="submit" value="Next">
+                </form>
+  {%endblock%}
